@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_129333dab9530a61c48d37ff37e25f4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_129333dab9530a61c48d37ff37e25f4f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_129333dab9530a61c48d37ff37e25f4f = L.map(
+                "map_129333dab9530a61c48d37ff37e25f4f",
+                {
+                    center: [48.2082, 16.3738],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38bc492a169070088f87a1d2a937297d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            var marker_93d176ebc583118f11f27a237faf6b34 = L.marker(
+                [48.2084, 16.3731],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_93d176ebc583118f11f27a237faf6b34.bindTooltip(
+                `<div>
+                     Stephansdom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d989de17211793f62f27cbc283e6f983 = L.marker(
+                [48.209, 16.3709],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_d989de17211793f62f27cbc283e6f983.bindTooltip(
+                `<div>
+                     Graben & Pestsäule
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_945b041a9dd952774f1b83ca881c8520 = L.marker(
+                [48.2073, 16.3658],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_945b041a9dd952774f1b83ca881c8520.bindTooltip(
+                `<div>
+                     Hofburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a45d5684c732acbc8ce40dc0732eb0a2 = L.marker(
+                [48.2079, 16.3673],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_a45d5684c732acbc8ce40dc0732eb0a2.bindTooltip(
+                `<div>
+                     Spanische Hofreitschule
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17885bae2954793859cc6ba827ff73d0 = L.marker(
+                [48.2049, 16.3667],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_17885bae2954793859cc6ba827ff73d0.bindTooltip(
+                `<div>
+                     Burggarten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb85a9ff6000b630d5d1286a6f0cffb9 = L.marker(
+                [48.2047, 16.3687],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_fb85a9ff6000b630d5d1286a6f0cffb9.bindTooltip(
+                `<div>
+                     Albertina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eee0238ae78f49583a5e0e81f7530f19 = L.marker(
+                [48.2036, 16.3696],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_eee0238ae78f49583a5e0e81f7530f19.bindTooltip(
+                `<div>
+                     Staatsoper
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b4b0b1d295fe48a31951aff0c5d2afa = L.marker(
+                [48.21, 16.3773],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_6b4b0b1d295fe48a31951aff0c5d2afa.bindTooltip(
+                `<div>
+                     Zanoni & Zanoni (Eis)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b229debe905f8276e1cb7655d7c32c7c = L.marker(
+                [48.216, 16.3952],
+                {}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+    
+            marker_b229debe905f8276e1cb7655d7c32c7c.bindTooltip(
+                `<div>
+                     Prater Riesenrad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_47bfdfb0af9296327c8dc94595b62e76 = L.polyline(
+                [[48.2084, 16.3731], [48.209, 16.3709], [48.2073, 16.3658], [48.2079, 16.3673], [48.2049, 16.3667], [48.2047, 16.3687], [48.2036, 16.3696], [48.21, 16.3773], [48.216, 16.3952]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_129333dab9530a61c48d37ff37e25f4f);
+        
+</script>
+</html>
