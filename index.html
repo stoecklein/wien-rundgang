@@ -12,7 +12,7 @@
             font-family: Arial, sans-serif;
         }
         #map {
-            height: 90%;
+            height: 90vh;
             width: 100%;
         }
         header {
@@ -21,11 +21,8 @@
             color: white;
             text-align: center;
         }
-        .leaflet-popup-content {
-            font-size: 14px;
-        }
         footer {
-            height: 10%;
+            height: 10vh;
             background: #f0f0f0;
             text-align: center;
             font-size: 12px;
@@ -44,12 +41,13 @@
     </header>
     <div id="map"></div>
     <footer>
-        Tipp: Über das Teilen-Menü im iPhone &rarr; „Zum Home-Bildschirm“ hinzufügen.
+        Tipp: Über das Teilen-Menü im iPhone → „Zum Home-Bildschirm“ hinzufügen.
     </footer>
     <script>
         var map = L.map('map').setView([48.2082, 16.3738], 14);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors',
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             maxZoom: 19
         }).addTo(map);
 
