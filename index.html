@@ -1,80 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="utf-8" />
-    <title>Wien Rundgang – Mobilfreundliche Karte</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        #map {
-            height: 90%;
-            width: 100%;
-        }
-        header {
-            padding: 10px;
-            background-color: #004080;
-            color: white;
-            text-align: center;
-        }
-        .leaflet-popup-content {
-            font-size: 14px;
-        }
-        footer {
-            height: 10%;
-            background: #f0f0f0;
-            text-align: center;
-            font-size: 12px;
-            padding: 5px;
-        }
-    </style>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-sA+4jv6DRSk4iHjxGffcp3TchJZE3UfxgZIuS+3C4uA=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-o9N1jLfA68J5Xh+M3fHMo1qYxVHZ1D+VZs6xkG4cCxo=" crossorigin=""></script>
-</head>
-<body>
-    <header>
-        <h2>🚶‍♀️ Wien Rundgang</h2>
-        <p>Tippe auf die Marker, um Geschichten & Infos zu sehen.</p>
-    </header>
-    <div id="map"></div>
-    <footer>
-        Tipp: Über das Teilen-Menü im iPhone &rarr; „Zum Home-Bildschirm“ hinzufügen.
-    </footer>
-    <script>
-        var map = L.map('map').setView([48.2082, 16.3738], 14);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors',
-            maxZoom: 19
-        }).addTo(map);
-
-        var latlngs = [];
-
-        var stations = [
-            ["Stephansdom", 48.2084, 16.3731, "Der Dom mit dem Drachen – Wahrzeichen Wiens mit Geschichte seit dem 12. Jahrhundert."],
-            ["Graben & Pestsäule", 48.2090, 16.3709, "Goldene Engel und Teufel als Dank für das Ende der Pest im Jahr 1679."],
-            ["Hofburg", 48.2073, 16.3658, "Ehemalige Residenz der Habsburger – über 600 Jahre Machtzentrum."],
-            ["Spanische Hofreitschule", 48.2079, 16.3673, "Berühmte weiße Lipizzaner tanzen hier seit über 450 Jahren."],
-            ["Burggarten", 48.2049, 16.3667, "Grünes Refugium mit Mozart-Denkmal und Blumen-Notenschlüssel."],
-            ["Albertina", 48.2047, 16.3687, "Museum mit dem berühmten Feldhasen von Dürer."],
-            ["Staatsoper", 48.2036, 16.3696, "Eröffnet 1869 mit Mozarts 'Don Giovanni' – Opernhaus von Weltrang."],
-            ["Zanoni & Zanoni (Eis)", 48.2100, 16.3773, "Eisgenuss in der Innenstadt – legendär bei Alt und Jung."],
-            ["Prater Riesenrad", 48.2160, 16.3952, "Das große Riesenrad – gebaut 1897, heute Wahrzeichen Wiens."]
-        ];
-
-        stations.forEach(function(loc) {
-            var marker = L.marker([loc[1], loc[2]]).addTo(map);
-            marker.bindPopup("<b>" + loc[0] + "</b><br>" + loc[3]);
-            latlngs.push([loc[1], loc[2]]);
-        });
-
-        var polyline = L.polyline(latlngs, {color: 'blue'}).addTo(map);
-        map.fitBounds(polyline.getBounds());
-    </script>
-</body>
-</html>
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="de">\
+<head>\
+    <meta charset="utf-8" />\
+    <title>Wien Rundgang \'96 Mobilfreundliche Karte</title>\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <style>\
+        html, body \{\
+            height: 100%;\
+            margin: 0;\
+            font-family: Arial, sans-serif;\
+        \}\
+        #map \{\
+            height: 90vh;\
+            width: 100%;\
+        \}\
+        header \{\
+            padding: 10px;\
+            background-color: #004080;\
+            color: white;\
+            text-align: center;\
+        \}\
+        .leaflet-popup-content \{\
+            font-size: 14px;\
+        \}\
+        footer \{\
+            height: 10vh;\
+            background: #f0f0f0;\
+            text-align: center;\
+            font-size: 12px;\
+            padding: 5px;\
+        \}\
+    </style>\
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"\
+          integrity="sha256-sA+4jv6DRSk4iHjxGffcp3TchJZE3UfxgZIuS+3C4uA=" crossorigin=""/>\
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"\
+            integrity="sha256-o9N1jLfA68J5Xh+M3fHMo1qYxVHZ1D+VZs6xkG4cCxo=" crossorigin=""></script>\
+</head>\
+<body>\
+    <header>\
+        <h2>\uc0\u55357 \u57014 \u8205 \u9792 \u65039  Wien Rundgang</h2>\
+        <p>Tippe auf die Marker, um Geschichten & Infos zu sehen.</p>\
+    </header>\
+    <div id="map"></div>\
+    <footer>\
+        Tipp: \'dcber das Teilen-Men\'fc im iPhone \uc0\u8594  \'84Zum Home-Bildschirm\'93 hinzuf\'fcgen.\
+    </footer>\
+    <script>\
+        var map = L.map('map').setView([48.2082, 16.3738], 14);\
+\
+        L.tileLayer('https://\{s\}.tile.openstreetmap.org/\{z\}/\{x\}/\{y\}.png', \{\
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',\
+            maxZoom: 19\
+        \}).addTo(map);\
+\
+        var latlngs = [];\
+\
+        var stations = [\
+            ["Stephansdom", 48.2084, 16.3731, "Der Dom mit dem Drachen \'96 Wahrzeichen Wiens mit Geschichte seit dem 12. Jahrhundert."],\
+            ["Graben & Pests\'e4ule", 48.2090, 16.3709, "Goldene Engel und Teufel als Dank f\'fcr das Ende der Pest im Jahr 1679."],\
+            ["Hofburg", 48.2073, 16.3658, "Ehemalige Residenz der Habsburger \'96 \'fcber 600 Jahre Machtzentrum."],\
+            ["Spanische Hofreitschule", 48.2079, 16.367\
+3, "Ber\'fchmte wei\'dfe Lipizzaner tanzen hier seit \'fcber 450 Jahren."],\
+            ["Burggarten", 48.2049, 16.3667, "Gr\'fcnes Refugium mit Mozart-Denkmal und Blumen-Notenschl\'fcssel."],\
+            ["Albertina", 48.2047, 16.3687, "Museum mit dem ber\'fchmten Feldhasen von D\'fcrer."],\
+            ["Staatsoper", 48.2036, 16.3696, "Er\'f6ffnet 1869 mit Mozarts 'Don Giovanni' \'96 Opernhaus von Weltrang."],\
+            ["Zanoni & Zanoni (Eis)", 48.2100, 16.3773, "Eisgenuss in der Innenstadt \'96 legend\'e4r bei Alt und Jung."],\
+            ["Prater Riesenrad", 48.2160, 16.3952, "Das gro\'dfe Riesenrad \'96 gebaut 1897, heute Wahrzeichen Wiens."]\
+        ];\
+\
+        stations.forEach(function(loc) \{\
+            var marker = L.marker([loc[1], loc[2]]).addTo(map);\
+            marker.bindPopup("<b>" + loc[0] + "</b><br>" + loc[3]);\
+            latlngs.push([loc[1], loc[2]]);\
+        \});\
+\
+        var polyline = L.polyline(latlngs, \{color: 'blue'\}).addTo(map);\
+        map.fitBounds(polyline.getBounds());\
+    </script>\
+</body>\
+</html>}
